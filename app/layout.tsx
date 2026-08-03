@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { siteConfig, absoluteUrl } from "@/lib/site";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -93,6 +94,7 @@ export default function RootLayout({
     <html lang="en-LK">
       <body suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   );
