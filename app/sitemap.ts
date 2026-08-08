@@ -29,5 +29,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: absoluteUrl("/privacy-policy"),
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.5,
+      alternates: {
+        languages: {
+          "en-LK": absoluteUrl("/privacy-policy"),
+          en: absoluteUrl("/privacy-policy"),
+        },
+      },
+    },
   ];
 }

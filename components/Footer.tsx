@@ -24,7 +24,7 @@ export default function Footer() {
             Facebook ↗
           </a>
           <Link href="/portfolio">Portfolio ↗</Link>
-          <a href={`mailto:${siteConfig.email}`}>Email ↗</a>
+          <Link href="/privacy-policy">Privacy Policy ↗</Link>
         </div>
       </div>
 
